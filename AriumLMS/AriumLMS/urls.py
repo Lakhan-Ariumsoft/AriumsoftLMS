@@ -20,4 +20,6 @@ from django.urls import path  , include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('zoomApp.urls')),
+    # path('lms', include('lms.urls')),
+    path('auth/', include('firebaseAuth.urls')),
 ]
